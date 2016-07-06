@@ -955,11 +955,8 @@ def main():
             pscan.run()
             
         else:
-		for subdomain in subdomains:
-			try:
-				IP = socket.gethostbyname(subdomain)
-				print IP+"\t"+G+subdomain+W
-			except socket.gaierror:
-				pass
+            for subdomain in subdomains:
+                print G+subdomain+W
+                
 if __name__=="__main__":
     main()
